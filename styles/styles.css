@@ -1,0 +1,160 @@
+.light {
+    background: #FFF
+}
+
+.acc {
+    background:
+}
+
+.dark {
+    background: #212121
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', monospace, sans-serif;
+    cursor: default;
+    user-select: none
+}
+
+html, body {
+    position: relative
+}
+
+a {
+    text-decoration: none;
+    color: #616161
+}
+
+.centered, .centered-x, .centered-y {
+    position: relative;
+    display: inline-block
+}
+
+.centered {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
+
+.centered-x {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
+}
+
+.centered-y {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+
+.vessel {
+    /*background: url("reference.png");*/
+    background-size: cover;
+    /*background-position-y: -124px;*/
+}
+
+
+/*______________________________SEARCH_BAR*/
+
+.search-vessel {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+input {
+    background: transparent;
+    height: 66px;
+    border: 0;
+    width: 100%;
+    color: #757575;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+input:focus {
+    outline: none
+}
+
+input::-webkit-input-placeholder {
+    text-align: center;
+    color: #4285f4;
+}
+
+input:-ms-input-placeholder {
+    text-align: center;
+    color: #4285f4;
+}
+
+input::-moz-placeholder {
+    text-align: center;
+    color: #4285f4;
+    opacity: 1;
+}
+
+input:-moz-placeholder {
+    text-align: center;
+    color: #4285f4;
+    opacity: 1;
+}
+
+
+/*______________________________SEARCH_BAR_END*/
+
+.content {
+    height: calc(100vh - 70px);
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.content::-webkit-scrollbar {
+    width: 8px;
+    background: white
+}
+
+.content::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 50% 0 0 50%;
+}
+
+.content::-webkit-scrollbar-thumb {
+    border-radius: 50% 0 0 50%;
+    background: #4285f4;
+}
+
+.division {
+    background: linear-gradient(to bottom, #ffffff ,transparent);
+    width: 100%;
+    height: 30px;
+    margin: 0 0 22px 0;
+}
+
+hr {
+    width: 90%;
+    background-color: #4285f4;
+    height: 2px;
+    border: 0;
+    margin: 0 5%;
+}
+
+.app {
+    display: inline-block;
+    float: left;
+    text-align: center;
+    max-height: 160px;
+    width: calc((100vw / 5) - 2px);
+    height: calc(100vw / 4);
+}
+
+.app-img {
+    display: inline-block;
+    max-height: 100px;
+    max-width: 100px;
+    height: 14vw;
+    width: 14vw;
+    overflow: hidden;
+}
