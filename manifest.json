@@ -1,6 +1,6 @@
 {
-  "name": "App_Shell",
-  "short_name": "App_Shell",
+  "name": "WebDrawer",
+  "short_name": "WebDrawer",
   "icons": [{
     "src": "images/icons/icon-.png",
       "sizes": "128x128",
@@ -22,8 +22,8 @@
       "sizes": "256x256",
       "type": "image/png"
     }],
-  "start_url": "/index.html",
+  "start_url": "../index.html?homescreen=1",
   "display": "fullscreen",
   "background_color": "#FFF",
-  "theme_color": "#536DFE"
+  "theme_color": "#212121"
 }
