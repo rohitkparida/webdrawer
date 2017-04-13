@@ -61,18 +61,21 @@ a {
 /*______________________________SEARCH_BAR*/
 
 .search-vessel {
-    position: relative;
-    width: 100%;
+    position: fixed;
+    background: #FFF;
+    width: calc(100% - 8px);
     margin: 0 auto;
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+    z-index: 1;
 }
 
 input {
     background: transparent;
     height: 66px;
     border: 0;
-    width: 100%;
-    color: #757575;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    width: 40%;
+    margin: 0 30%;
+    color: #212121;
 }
 
 input:focus {
@@ -82,22 +85,23 @@ input:focus {
 input::-webkit-input-placeholder {
     text-align: center;
     color: #4285f4;
+    color: #000;
 }
 
 input:-ms-input-placeholder {
     text-align: center;
-    color: #4285f4;
+    color: #000;
 }
 
 input::-moz-placeholder {
     text-align: center;
-    color: #4285f4;
+    color: #000;
     opacity: 1;
 }
 
 input:-moz-placeholder {
     text-align: center;
-    color: #4285f4;
+    color: #000;
     opacity: 1;
 }
 
@@ -105,7 +109,7 @@ input:-moz-placeholder {
 /*______________________________SEARCH_BAR_END*/
 
 .content {
-    height: calc(100vh - 70px);
+    height: 100vh;
     position: relative;
     overflow-x: hidden;
     overflow-y: scroll;
@@ -113,32 +117,28 @@ input:-moz-placeholder {
 
 .content::-webkit-scrollbar {
     width: 8px;
-    background: white
+    background: white;
+    z-index: 100;
 }
 
 .content::-webkit-scrollbar-track {
     background: rgba(0, 0, 0, 0.2);
-    border-radius: 50% 0 0 50%;
 }
 
 .content::-webkit-scrollbar-thumb {
     border-radius: 50% 0 0 50%;
-    background: #4285f4;
+    background: #000;
 }
 
 .division {
-    background: linear-gradient(to bottom, #ffffff ,transparent);
-    width: 100%;
-    height: 30px;
-    margin: 0 0 22px 0;
+    margin: 66px 0 22px 0;
 }
 
 hr {
-    width: 90%;
-    background-color: #4285f4;
+    width: 100%;
+    background-color: #000;
     height: 2px;
     border: 0;
-    margin: 0 5%;
 }
 
 .app {
@@ -156,5 +156,29 @@ hr {
     max-width: 100px;
     height: 14vw;
     width: 14vw;
-    overflow: hidden;
+    border-radius: 8px;
+    padding: 6px;
+    background: url('../images/assets/h.svg');
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+.round {
+    border-radius: 50%;
+}
+
+@media (min-width: 768) {
+    .app {
+        width: calc((100vw / 6) - 2px);
+    }
+}
+
+@media (max-width: 319px) {
+    .app {
+        height: calc(100vw / 2);
+        width: calc((100vw / 1) - 2px);
+    }
+    .app-img {
+        height: 28vw;
+        width: 28vw;
+    }
 }
