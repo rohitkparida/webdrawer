@@ -1,8 +1,8 @@
 {
   "name": "WebDrawer",
-  "short_name": "WebDrawer",
+  "short_name": " ",
   "icons": [{
-    "src": "images/icons/icon-.png",
+    "src": "images/icons/icon.png",
       "sizes": "128x128",
       "type": "image/png"
     }, {
@@ -22,7 +22,7 @@
       "sizes": "256x256",
       "type": "image/png"
     }],
-  "start_url": "../index.html?homescreen=1",
+  "start_url": "index.html?homescreen=1",
   "display": "fullscreen",
   "background_color": "#FFF",
   "theme_color": "#212121"
